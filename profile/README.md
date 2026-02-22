@@ -1,4 +1,4 @@
-# ⛰️ Kido
+# ⛰️ Kibo
 
 A small collective building precision-engineered dev tools.
 
