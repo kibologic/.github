@@ -10,7 +10,7 @@ A small collective building precision-engineered dev tools.
 
 ## Philosophy
 
-Precision over bloat. Fast by default. Built to last.
+Precision over bloat. Fast by default.
 
 ---
 
