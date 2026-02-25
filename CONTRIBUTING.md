@@ -1,48 +1,94 @@
 <!--
-Copyright (c) 2024 Themba Mzumara
-This file is part of SwissJS Framework. All rights reserved.
-Licensed under the MIT License. See LICENSE in the project root for license information.
+Copyright (c) 2024 Kibologic
+Licensed under the MIT License. See LICENSE for details.
 -->
 
-# Contributing to SwissJS
+# Contributing to Kibologic
 
-Thank you for your interest in contributing to SwissJS! We welcome contributions from the community to help make this framework better.
+Thank you for your interest in contributing to the Kibologic ecosystem!
+
+This guide applies to **all repositories** under the [Kibologic organization](https://github.com/kibologic), including:
+
+- [`swiss-lib`](https://github.com/kibologic/swiss-lib) — SwissJS Framework Core
+- [`swite`](https://github.com/kibologic/swite) — Swiss Development Server & Build Tool
+- [`swiss-erp`](https://github.com/kibologic/swiss-erp) *(coming soon)* — Alpine ERP Application
+- Any other packages or apps published under the `@swissjs/*` or `@sws/*` scope
+
+---
+
+## Ground Rules
+
+- Be respectful. See our [Code of Conduct](CODE_OF_CONDUCT.md).
+- Commits must follow [Conventional Commits](https://www.conventionalcommits.org/): `type(scope): description`
+- All code is TypeScript-first. Follow the patterns already in the codebase.
+- No untested changes. We use `pnpm test` and CI pipelines.
+
+---
 
 ## Getting Started
 
-1.  **Read the Code of Conduct**: Please review our [Code of Conduct](CODE_OF_CONDUCT.md) to understand our community standards.
-2.  **Check the Development Guide**: Our detailed [Development Guidelines](docs/DEVELOPMENT.md) cover everything you need to know about:
-    *   Setting up your environment
-    *   Coding standards (Linting, TypeScript)
-    *   Testing requirements
-    *   Commit message conventions (`[SWS-AREA-ID] Description`)
-    *   Branching strategy (`develop` -> `staging` -> `main`)
+1. **Fork** the repo you want to contribute to.
+2. **Clone** your fork locally.
+3. **Install dependencies** with `pnpm install` (we use [pnpm workspaces](https://pnpm.io/workspaces)).
+4. **Create a branch** from `develop` (not `main`):
+   ```bash
+   git checkout -b feat/your-feature-name develop
+   ```
 
-## How to Contribute
+---
 
-1.  **Fork the repository** and clone it locally.
-2.  **Create a branch** from `develop` for your feature or fix.
-3.  **Make your changes**, ensuring you follow the [Quality Standards](docs/DEVELOPMENT.md#quality-standards).
-4.  **Run checks** locally:
-    ```bash
-    pnpm lint
-    pnpm type-check
-    pnpm test
-    ```
-5.  **Commit your changes** using our conventional commit format.
-6.  **Push to your fork** and submit a Pull Request to the `develop` branch.
+## Development Workflow
 
-## Pull Request Process
+### Commit Messages
 
-*   **Target Branch**: All PRs should target `develop`.
-*   **CI Checks**: Your PR must pass all CI checks (Lint, Test, Security, etc.).
-*   **Documentation**: If you change code, you must update the relevant documentation. Our `verify-docs-sync` script will check this.
-*   **Review**: A maintainer will review your PR. Please address any feedback promptly.
+We use conventional commits:
+
+```
+feat(core): add reactive signal utility
+fix(compiler): resolve .uix JSX transform edge case
+chore(swite): update esbuild to latest
+docs(swiss-lib): update README with SwissComponent examples
+```
+
+### Branching Strategy
+
+| Branch | Purpose |
+|---|---|
+| `main` | Stable, released code |
+| `develop` | Active development, PRs target here |
+| `feat/*` | New features |
+| `fix/*` | Bug fixes |
+| `chore/*` | Maintenance tasks |
+
+### Running Checks
+
+```bash
+pnpm lint          # ESLint
+pnpm type-check    # TypeScript
+pnpm test          # Vitest
+```
+
+---
+
+## Pull Requests
+
+- **Target branch**: `develop`
+- **PR must**: pass all CI checks (lint, type-check, tests)
+- **Documentation**: update relevant docs if you change behavior
+- **Review**: a maintainer will review your PR — please respond to feedback promptly
+
+---
 
 ## Reporting Issues
 
-If you find a bug or have a feature request, please open an issue on GitHub. Provide as much detail as possible, including reproduction steps for bugs.
+Open an issue on the appropriate repo. Please include:
+- What happened
+- What you expected
+- Steps to reproduce
+- Relevant code snippets or error messages
+
+---
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing, you agree your contributions will be licensed under the [MIT License](LICENSE).

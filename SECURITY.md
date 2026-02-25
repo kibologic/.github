@@ -1,68 +1,69 @@
 # Security Policy
 
+This security policy applies to **all repositories** under the [Kibologic organization](https://github.com/kibologic).
+
+---
+
 ## Supported Versions
 
-We provide security updates for the following versions of SwissJS:
+We patch security vulnerabilities in the **latest minor version** of each package. Older versions are not actively maintained.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.0.x   | :white_check_mark: |
-| < 1.0   | :x:                |
+| Status | Supported |
+|---|---|
+| Latest release | ✅ Yes |
+| Previous major | ⚠️ Critical only |
+| Older versions | ❌ No |
+
+---
 
 ## Reporting a Vulnerability
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
-If you believe you've found a security vulnerability in SwissJS, we appreciate your help in disclosing it to us in a responsible manner. 
+If you believe you've found a security vulnerability in any Kibologic project, please disclose it responsibly:
 
 ### How to Report
 
-1. **Email**: Send an email to [SECURITY_EMAIL] with the subject line "Security Vulnerability in SwissJS"
-2. **Include**: 
-   - A detailed description of the vulnerability
-   - Steps to reproduce the issue
-   - Any relevant code snippets or references
-   - Your contact information
+1. **Email**: Send a report to `themba@kibologic.dev` with the subject:
+   `[SECURITY] Vulnerability in <repo-name>`
+2. **Include**:
+   - Affected repository and version
+   - A clear description of the vulnerability
+   - Steps to reproduce
+   - Any relevant code snippets or PoC
+   - Your contact info (optional for anonymous reports)
 
-We will acknowledge receipt of your report within 48 hours and provide a more detailed response within 7 days indicating the next steps in handling your report.
+We will acknowledge receipt within **48 hours** and aim to provide a resolution timeline within **7 days**.
 
-### Our Commitment
+---
 
-- We will respond to your report within 48 hours with our assessment and expected resolution time
-- We will keep you informed of the progress towards fixing the vulnerability
-- We will notify you when the vulnerability has been fixed
-- We will credit you in our security advisories (unless you prefer to remain anonymous)
+## Our Commitment
 
-### Preferred Languages
+- We will keep you informed as we investigate and fix the issue.
+- We will credit responsible disclosures in release notes (unless you prefer anonymity).
+- We will not take legal action against researchers acting in good faith.
 
-We prefer all communications to be in English.
+---
 
-## Security Updates
+## Scope
 
-Security updates will be released as patch versions (e.g., 1.0.1, 1.0.2) for the latest minor version.
+All packages and applications published under:
+- `@swissjs/*` (e.g., `@swissjs/core`, `@swissjs/compiler`)
+- `@sws/*` (e.g., `@sws/identity`, `@sws/web-storage`)
+- Kibologic application repositories (e.g., `swiss-erp`, `swite`)
 
-## Security Best Practices
+---
 
-### For Users
-- Always use the latest stable version of SwissJS
-- Keep your dependencies up to date
-- Follow the principle of least privilege
-- Use environment variables for sensitive information
-- Regularly audit your dependencies for known vulnerabilities
+## Out of Scope
 
-### For Contributors
-- Follow secure coding practices
-- Never commit sensitive information to the repository
-- Keep dependencies up to date
-- Report any security concerns to the maintainers
+- Social engineering attacks
+- Denial of service attacks
+- Issues in third-party dependencies (report directly to those maintainers)
 
-## Security Advisories
-
-Security advisories will be published in the following locations:
-- GitHub Security Advisories
-- [Official SwissJS Blog/Website]
-- [Official Twitter Account]
+---
 
 ## Contact
 
-For security-related inquiries, please contact: [SECURITY_EMAIL]
+For security matters: `themba@kibologic.dev`
+
+For general questions, open a GitHub Discussion or Issue in the relevant repo.
