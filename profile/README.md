@@ -29,7 +29,7 @@ Everything at **[swissjs.dev](https://swissjs.dev)** — single domain, no spraw
 | [docs](https://github.com/kibologic/docs) | swissjs.dev website + documentation |
 | [examples](https://github.com/kibologic/examples) | example applications |
 | [create-swissjs](https://github.com/kibologic/create-swissjs) | CLI scaffolding tool |
-| alpine-erp | ERP application (private, coming soon) |
+| business-alpine | ERP application (private, coming soon) |
 | pulse | health claims platform (private, coming soon) |
 
 ---
