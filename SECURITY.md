@@ -20,20 +20,19 @@ We patch security vulnerabilities in the **latest minor version** of each packag
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
-If you believe you've found a security vulnerability in any Kibologic project, please disclose it responsibly:
+If you believe you've found a security vulnerability in any Kibologic project, please disclose it responsibly using **GitHub's private vulnerability reporting**:
 
 ### How to Report
 
-1. **Email**: Send a report to `themba@kibologic.dev` with the subject:
-   `[SECURITY] Vulnerability in <repo-name>`
-2. **Include**:
+1. Go to the affected repository's **Security** tab.
+2. Select **Report a vulnerability**.
+3. Include:
    - Affected repository and version
    - A clear description of the vulnerability
    - Steps to reproduce
    - Any relevant code snippets or PoC
-   - Your contact info (optional for anonymous reports)
 
-We will acknowledge receipt within **48 hours** and aim to provide a resolution timeline within **7 days**.
+This opens a private advisory visible only to the reporter and the repository maintainers — nothing is exposed publicly until a fix is ready.
 
 ---
 
@@ -64,6 +63,6 @@ All packages and applications published under:
 
 ## Contact
 
-For security matters: `themba@kibologic.dev`
+For security matters, use GitHub's private vulnerability reporting (see above) on the relevant repository.
 
 For general questions, open a GitHub Discussion or Issue in the relevant repo.
